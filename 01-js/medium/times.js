@@ -7,6 +7,14 @@ Try running it for
 Hint - use Date class exposed in JS
 */
 
-function calculateTime(n) {
-    return 0.01;
+function calculateTime(n){
+  var total = 0
+  const start = Date.now()
+  for(i = 1; i<= n; i++){
+    total += i
+  }
+  const end = Date.now() - start
+  console.log(`Seconds Taken:${Math.floor(end/1000)}sec`)
+  
 }
+calculateTime(100)
