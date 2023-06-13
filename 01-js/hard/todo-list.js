@@ -12,6 +12,26 @@
 */
 
 class Todo {
+  constructor(){
+    this.todolist = []}
+  add(todo){
+    this.todolist.push(todo)
+  }
+  remove(indexoftodo){
+    this.todolist.splice(indexoftodo,indexoftodo)
+  }
+  update(index,updatedtodo){
+    this.todolist.splice(index,0,updatedtodo)
+  }
+  getAll(){
+    return console.log(this.todolist)
+  }
+  get(indexoftodo){
+    return console.log(this.todolist[indexoftodo])
+  }
+  clear(){
+    todolist.splice(0,this.todolist.length)
+  }
 
 }
 
